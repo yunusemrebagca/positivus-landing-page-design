@@ -1,0 +1,20 @@
+.hero {
+  margin-block: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    text-align: left;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    button {
+      margin-top: 3rem;
+      width: 250px;
+    }
+
+    justify-content: center;
+  }
+}

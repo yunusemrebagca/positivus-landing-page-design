@@ -1,0 +1,16 @@
+{
+  "name": "positivus-landing-page-design",
+  "version": "1.0.0",
+  "description": "static website for my portfolio using parcel and sass ",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html --public-url .",
+    "dev": "parcel src/index.html"
+  },
+  "author": "yunusemrebagca",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}
