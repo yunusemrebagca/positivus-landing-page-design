@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as var;
+
+.proposal {
+  margin-block: 8rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+  &__left {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      width: 400px;
+      &:hover {
+        background-color: var.$gray;
+      }
+    }
+  }
+  img {
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+}

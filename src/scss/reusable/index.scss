@@ -1,7 +1,22 @@
 @forward "./buttons";
+@use "../abstracts/variables";
 
 .container {
   max-width: 1220px;
   margin-inline: auto;
   padding: 2rem;
+}
+
+.colored-text {
+  background-color: variables.$light-green;
+  color: black;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.colored-text-2 {
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
 }

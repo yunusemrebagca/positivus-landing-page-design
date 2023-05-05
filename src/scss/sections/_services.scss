@@ -1,0 +1,46 @@
+@use "../abstracts/variables";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+
+  &__header {
+    margin-block: 4rem 3rem;
+    max-width: 850px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  &__cards {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+  &__card {
+    transition: 0.3s all ease;
+    &:hover {
+      transform: translateY(-20px);
+    }
+    border: 1px solid black;
+    border-bottom: 10px solid #000;
+    border-radius: 4rem;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    &-right {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+}
