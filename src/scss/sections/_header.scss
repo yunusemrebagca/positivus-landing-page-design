@@ -1,25 +1,57 @@
+@use "../abstracts/breakpoints";
+
 .header {
   margin-block: 3rem;
   padding-block: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include breakpoints.md {
+    padding-inline: 8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   &__right {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
+    @include breakpoints.breakpoint(860px) {
+      margin-right: 0;
+      gap: 0;
+      margin-top: 4rem;
+    }
   }
   &__nav-links {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    @include breakpoints.lg {
+      display: none;
+    }
   }
 }
 .companies {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
+  @include breakpoints.lg {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    justify-items: center;
+  }
+  @include breakpoints.md {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  @include breakpoints.sm {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
   img {
     height: 48px;
     filter: grayscale(90%);

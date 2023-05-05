@@ -1,10 +1,18 @@
 @forward "./buttons";
 @use "../abstracts/variables";
 
+@use "../abstracts/breakpoints";
+
 .container {
   max-width: 1220px;
   margin-inline: auto;
   padding: 2rem;
+  @include breakpoints.lg {
+    max-width: 900px;
+  }
+  @include breakpoints.md {
+    max-width: 600px;
+  }
 }
 
 .colored-text {
