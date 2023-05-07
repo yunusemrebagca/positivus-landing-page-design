@@ -28,3 +28,17 @@
   padding: 0.1rem 0.6rem;
   border-radius: 1rem;
 }
+
+.section__header {
+  margin-block: 4rem 3rem;
+  max-width: 850px;
+  display: flex;
+  gap: 5rem;
+  h2 {
+    min-width: max-content;
+  }
+  align-items: center;
+  @include breakpoints.sm {
+    flex-direction: column;
+  }
+}
