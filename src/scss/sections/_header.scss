@@ -1,12 +1,28 @@
 @use "../abstracts/breakpoints";
 @use "../abstracts/variables";
 .header {
-  margin-block: 3rem;
-  padding-block: 4rem;
+  &__container {
+    padding-block: 2rem;
+    transition: all ease 0.2s;
+    &.sticky {
+      padding-block: 0;
+      position: sticky;
+      top: 0;
+      background-color: rgba(variables.$light-green, 0.8);
+      z-index: 100;
+      &.hide {
+        transform: translateY(-100%);
+      }
+    }
+  }
+  max-width: 1200px;
+  margin-inline: auto;
+
+  padding-block: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  transition: all ease 0.3s;
 
   @include breakpoints.md {
     padding-inline: 8rem;

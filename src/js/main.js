@@ -68,3 +68,24 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+const nav = document.querySelector(".header__container");
+
+let prevScrollpos = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  let currentScrollPos = window.scrollY;
+
+  if (prevScrollpos < currentScrollPos) {
+    nav.classList.add("hide");
+  } else {
+    nav.classList.remove("hide");
+  }
+  prevScrollpos = currentScrollPos;
+
+  if (window.scrollY > 0) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+});
