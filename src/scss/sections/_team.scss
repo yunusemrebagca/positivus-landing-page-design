@@ -62,4 +62,7 @@
   font-size: 1.7rem;
   width: max-content;
   align-self: flex-end;
+  @media (max-width: 900px) {
+    align-self: center;
+  }
 }

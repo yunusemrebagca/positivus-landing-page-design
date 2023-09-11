@@ -74,6 +74,12 @@ const nav = document.querySelector(".header__container");
 let prevScrollpos = window.scrollY;
 
 window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+
   let currentScrollPos = window.scrollY;
 
   if (prevScrollpos < currentScrollPos) {
@@ -82,10 +88,4 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("hide");
   }
   prevScrollpos = currentScrollPos;
-
-  if (window.scrollY > 0) {
-    nav.classList.add("sticky");
-  } else {
-    nav.classList.remove("sticky");
-  }
 });
