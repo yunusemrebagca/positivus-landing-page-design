@@ -80,12 +80,12 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("sticky");
   }
 
-  let currentScrollPos = window.scrollY;
+  // let currentScrollPos = window.scrollY;
 
-  if (prevScrollpos < currentScrollPos) {
-    nav.classList.add("hide");
-  } else {
-    nav.classList.remove("hide");
-  }
-  prevScrollpos = currentScrollPos;
+  // if (prevScrollpos < currentScrollPos) {
+  //   nav.classList.add("hide");
+  // } else {
+  //   nav.classList.remove("hide");
+  // }
+  // prevScrollpos = currentScrollPos;
 });
