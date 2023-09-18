@@ -7,7 +7,6 @@ This repository contains the code for the Positivus landing page design. It incl
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Description
@@ -40,8 +39,10 @@ npm run deploy
 
 ## Usage
 
-Once the landing page is running, you can navigate through the different sections using the provided navigation links. The page is fully responsive and can adapt to different screen sizes.
+Once the landing page runs, you can navigate through the different sections using the provided navigation links. The page is fully responsive and can adapt to different screen sizes.
 
 Feel free to customize the content and styles to suit your needs. You can modify the HTML, CSS, and JavaScript files according to your preferences.
 
+## Licence 
 
+You can find the used Figma design and license here https://www.figma.com/community/file/1230604708032389430
